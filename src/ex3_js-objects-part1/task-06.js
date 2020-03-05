@@ -1,17 +1,17 @@
-function copyObjectDeep(objId) {
-	if (typeof objId !== "object") { 
+function copyObjectDeep(object) {
+	if (typeof object !== "object") { 
 		console.log("Неверный тип аргумента функции");
 		return undefined;
 	}
-	let objCopy = Array.isArray(objId)?[]:{}; 
-	for (let key in objId) {
-		if (typeof objId[key] === "object") { //шаг рекурсии: если свойство объекта само явл. объектом, вызываем функцию 
-			objCopy[key] = copyObjectDeep(objId[key]);
+	let objectCopy = Array.isArray(object)?[]:{}; 
+	for (let key in object) {
+		if (typeof object[key] === "object") {
+			objectCopy[key] = copyObjectDeep(object[key]);
 		}
 		else {
-			objCopy[key] = objId[key]; //база рекурсии: если свойство объекта является примитивом, просто копируем его 
+			objectCopy[key] = object[key];
 		}
 	}
-	return objCopy;		
+	return object;		
 }
 module.exports = copyObjectDeep;

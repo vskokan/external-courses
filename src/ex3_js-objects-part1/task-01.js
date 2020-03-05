@@ -1,5 +1,5 @@
-const obj = {};
-obj.num = 100;
-obj.str = "String";
-obj.bool = true;
-delete objId.bool;
+const object = {};
+object.num = 100;
+object.str = "String";
+object.bool = true;
+delete object.bool;

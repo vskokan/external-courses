@@ -1,10 +1,10 @@
-function createIfApsent(propId, objId) {
-	if (typeof objId !== "object") { 
+function createIfApsent(property, object) {
+	if (typeof object !== "object") { 
 		console.log("Неверный тип аргумента функции");
 	}
-	if (!(propId in objId)) {
-		objId[propId] = 'new'; // eslint-disable-line
+	if (!(property in object)) {
+		object[property] = 'new'; // eslint-disable-line
 	}
-	return objId;
+	return object;
 }
 module.exports = createIfApsent;

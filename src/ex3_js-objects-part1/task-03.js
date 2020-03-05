@@ -1,7 +1,7 @@
-function hasProperty(propId, objId) {
-	if (typeof objId !== "object") { 
+function hasProperty(property, object) {
+	if (typeof object !== "object") { 
 		console.log("Неверный тип аргумента функции");
 	}
-	return (propId in objId);
+	return (property in object);
 }
 module.exports = hasProperty;

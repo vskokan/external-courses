@@ -1,8 +1,8 @@
-function printKeysProperties(objId) {
-	if (typeof objId === "object") { 
-		for (let key in objId) {
-			if(objId.hasOwnProperty(key)) {
-				console.log(key, ":", objId[key]);
+function printKeysProperties(object) {
+	if (typeof object === "object") { 
+		for (let key in object) {
+			if(object.hasOwnProperty(key)) {
+				console.log(key, ":", object[key]);
 			}
 		}	
 	}
