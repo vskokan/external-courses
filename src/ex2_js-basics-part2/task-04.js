@@ -1,7 +1,7 @@
-function isEqual(arr) {
+function isEqual(array) {
 	let isEqual = true;
-	for (let i = 0; i < arr.length - 1; i++) {
-		if (arr[i] !== arr[i+1]) {
+	for (let i = 0; i < array.length - 1; i++) {
+		if (array[i] !== array[i+1]) {
 			isEqual = false;
 		}
 	}

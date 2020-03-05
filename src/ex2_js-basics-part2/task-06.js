@@ -1,19 +1,19 @@
-function checkPrimeComposite(num) {
-	if ((typeof num !== "number") || (num > 1000) || (isNaN(num))) {
+function checkPrimeComposite(number) {
+	if ((typeof number !== "number") || (number > 1000) || (isNaN(number))) {
 		return ("Данные неверны");
 	}
-	if ((num === 0) || (num === 1)) {
-		return (`Число ${num} - не простое и не составное`);
+	if ((number === 0) || (number === 1)) {
+		return (`Число ${number} - не простое и не составное`);
 	}
 	let dividersAmount = 0;
-	for (let i = 1; i <= num; i++) {
-		if (!(num % i)) {
+	for (let i = 1; i <= number; i++) {
+		if (!(number % i)) {
 			++dividersAmount;
 		}
 	}
 	if (dividersAmount > 2) {
-		return (`Число ${num} - составное число`);
+		return (`Число ${number} - составное число`);
 	}
-	return (`Число ${num} - простое число`); 
+	return (`Число ${number} - простое число`); 
 }
-module.exports = checkPrimeComposite;
+module.exports = checkPrimeComposite; 
