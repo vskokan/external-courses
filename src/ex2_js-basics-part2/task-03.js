@@ -5,7 +5,7 @@ function countEvenOdd(array) {
 			if (array[i] === 0) {
 				result[2]++;
 			}
-			else if (arr[i] % 2 === 0) {
+			else if (array[i] % 2 === 0) {
 				result[0]++;
 			}
 			else {
