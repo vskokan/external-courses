@@ -12,6 +12,6 @@ function copyObjectDeep(object) {
 			objectCopy[key] = object[key];
 		}
 	}
-	return object;		
+	return objectCopy;		
 }
 module.exports = copyObjectDeep;
