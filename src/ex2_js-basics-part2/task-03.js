@@ -1,4 +1,7 @@
 function countEvenOdd(array) {
+	if (!Array.isArray(array)) {
+		return "Аргумент не является массивом";
+	}
 	let result = [0,0,0];
 	for (let i = 0; i < array.length; i++) {
 		if ((typeof array[i] === "number") && (!isNaN(array[i])) ) {

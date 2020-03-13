@@ -1,10 +1,10 @@
 function checkType(argument) {
-	let type;
-	switch (typeof argument) {
-		case "number": type = (isNaN(argument))?undefined:"number"; break;
-		case "string": type = "string"; break;
-		default: type = undefined; break;
+	if (typeof argument === "string") {
+		return "string";
+	} 
+	if ((typeof argument === "number") && (!isNaN(argument))) {
+		return "number";
 	}
-	return type;
+	return undefined;
 }
 module.exports = checkType;
