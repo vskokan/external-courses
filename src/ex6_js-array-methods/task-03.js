@@ -4,6 +4,7 @@ function isEvery(array, callback) {
 			return false;
 		}
 	}
+	
 	return true;
 }
 module.exports = isEvery;

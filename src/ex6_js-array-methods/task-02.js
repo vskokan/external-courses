@@ -4,6 +4,7 @@ function isSome(array, callback) {
 			return true;
 		}
 	}
+	
 	return false;
 }
 module.exports = isSome;
