@@ -3,7 +3,7 @@ function insertSubstring(string, substring, number) {
 		return undefined;
 	}
 
-	let stringArray = string.split(" ");
+	const stringArray = string.split(" ");
 	let newString = "";
 
 	if (number > stringArray.length) {
