@@ -41,7 +41,7 @@ img {
 	box-shadow: 0 0 10px black;	
 }
 #code {
-	background-color: #1B1BB3;
+	background-color: rgba(27, 27, 179, 1);
 	border: 10px solid #999999;
 	color: #E8E879;
 	font-size:1.7em;
