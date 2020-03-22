@@ -1,11 +1,15 @@
 function printCharacterAmount(string) {
 	if ((typeof string !== "string")&&(typeof string !== "object")) {
-		return "Неправильный тип параметра";
+		return undefined;
 	}
+
 	let tempString = string;
+
 	for (let i = 0; i < tempString.length;) {
+
 		let characterAmount = 0;
         let currentCharacter = tempString.charAt(i);
+        
 		for (let j = i; j < tempString.length; j++) {
 			if (currentCharacter === tempString.charAt(j)) {
 				++characterAmount;
@@ -16,6 +20,7 @@ function printCharacterAmount(string) {
         	tempString = tempString.replace(currentCharacter, "");
         }
 	}
+
 	return undefined;
 }
-module.exports = reverseString;
+module.exports = printCharacterAmount;
