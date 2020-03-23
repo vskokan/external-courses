@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+#lists1, #lists2, #lists3 {
+	margin: 10px;
+	padding: 20px;
+	display: inline-block;
+}
+#lists1 {
+	background: url(https://i.pinimg.com/originals/ef/61/0f/ef610fae587d000cb990ce59f660fff4.gif);
+	border: 3px solid white;
+	font: bold italic large Palatino, serif;
+	color: #5F2580;
+	width: 20%;
+	text-shadow: 1px 1px 2px white;
+}
+#lists2 {
+	background: url(https://avatanplus.com/files/resources/original/577cc271b28ce155bf578c43.jpg);
+	outline: 3px dashed #5F2580;
+	width: 50%;
+	font: bold italic 110% Calibri, serif;
+}
+#lists3 {
+	background: url(https://i.pinimg.com/236x/76/9f/9d/769f9de3b045efe84f36c47b0e52bf38.jpg);
+	border: 3px dotted black;
+	color: red;
+	font: bold 150% 'Lobster', cursive;
+	width: 10%;
+	text-align: center;
+}
+#text {
+	background-color: white;
+	color: rgb(0,0,0);
+	font-family: 'Homemade Apple', cursive;
+}
+img {
+	float: right;
+}
+#text, #code {
+	margin: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px black;	
+}
+#code {
+	background-color: rgba(27, 27, 179, 1);
+	border: 10px solid #999999;
+	color: #E8E879;
+	font-size:1.7em;
+}
+#text #p2 {
+	text-decoration: line-through;
+}
