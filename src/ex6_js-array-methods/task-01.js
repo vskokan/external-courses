@@ -1,5 +1,4 @@
 function copyArray(array, begin, end) {
-
 	let newArray = [];
 
 	switch (arguments.length) {

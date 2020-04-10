@@ -1,5 +1,4 @@
 function reduceArray(array, callback, initialValue) {
-
 	let previousValue, begin, sum = 0;
 
 	if (arguments.length === 2) {
