@@ -6,7 +6,7 @@ function openMenu() {
     let menu = document.createElement('ul');
 
     menu.className = 'menu';
-    userPanel.append(menu);
+    document.querySelector('.user-menu').append(menu);
 
     let menuItems = ['Menu', 'My profile', 'My tasks', 'Settings', 'Log Out'];
     let menuLinks = ['profileLink', 'tasksLink', 'settingsLink', 'logOutLink'];
@@ -22,7 +22,9 @@ function openMenu() {
             itemContent.className = 'menu__item-link';
             menuItem.append(itemContent);
             itemContent.innerHTML = menuItems[i];
-            if (i > 0) {
+            if (i === 0) {
+                itemContent.id = 'menuTitle'
+            } else {
                 itemContent.href = menuLinks[i-1];
             }
     }
@@ -43,8 +45,6 @@ function replaceArrow() {
 
     arrow.src = isOpened?'arrowup.svg':'arrowdown.svg';
 }
-
-
 
 function menuMain() {
     if (!isOpened) {

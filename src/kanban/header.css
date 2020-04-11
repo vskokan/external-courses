@@ -61,6 +61,6 @@
     z-index: 2;
 }
 
-* .user-menu__panel:hover {
+.user-menu__panel:hover {
     cursor: pointer;
 }

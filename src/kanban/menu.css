@@ -1,8 +1,6 @@
 .menu {
     position: absolute;
     list-style: none;
-   /* height: 200px;
-    width: 200px; */
     background-color: #EBECF0;
     right: 0px;
     border-radius: 10px;
@@ -47,19 +45,6 @@
     }
 }
 
-@keyframes hidemenu {
-    0% {
-        top: 65px;
-    }
-    50% {
-        top: 85px;
-    }
-    100% {
-        top: 55px;
-        opacity: 0%;
-    }
-}
-
 .user-menu__arrow-icon {
 	height: 24px;
 	width: 24px;
@@ -74,4 +59,10 @@
     text-decoration: none;
     color: #0079BF;
     cursor: pointer;
+}
+
+#menuTitle {
+    text-decoration: none;
+    color: #000;
+    cursor: unset;
 }
