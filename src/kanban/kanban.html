@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
 		<title>Kanban</title>
 		<meta charset="utf-8">
@@ -18,12 +18,14 @@
 				<div class="create-new-list__text">Create new list</div>
 			</div>
 			<div class="user-menu">
-				<div class="user-menu__avatar">
-					<object type="image/svg+xml" data="useravatar.svg" width="40" height="40" class="user-menu__icon" >
-					</object>
+				<div class="user-menu__panel">
+					<div class="user-menu__avatar">
+						<img src="useravatar.svg" width="40" height="40" alt = "" class="user-menu__avatar-icon">
+					</div>
+					<div class="user-menu__arrow-icon">
+						<img src="arrowdown.svg" alt = "" width="24" height="24" class="user-menu__arrow-icon_rotate"></img>
+					</div>
 				</div>
-				<object type="image/svg+xml" data="arrowdown.svg" width="24" height="24" class="user-menu__arrow-down" >
-				</object>
 			</div>
 		</header>
 		<main class="main">
@@ -36,4 +38,5 @@
 			<div class="user-info">Kanban board by <span class="user-info__name">&lt;NAME&gt;</span>, <span class="user-info__year">&lt;YEAR&gt;</span></div>
 		</footer>
 	</body>
+	<script type="text/javascript" src="menu.js"></script>
 </html>
