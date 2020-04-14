@@ -11,23 +11,15 @@
 				<h1>Form here</h1>
 				<h3>* requied fields</h3>
 				<hr>
-				<label>
-					Name:
-					<input type="text" id="username" placeholder="placeholder text">
-				</label><br>
-				<label id="emaillabel">	
-					Email:
-					<input type="email" id="email" placeholder="placeholder text">
-				</label><div class="arrow-left"></div><br>
-				<label id="websitelabel">	
-					Website:
-					<input type="text" id="website" placeholder="placeholder text">
-				</label><div class="arrow-left"></div><br>
-				<label>
-					Message:
-					<textarea></textarea>
-				</label><br>
-				<button>Submit</button>
+				<div class="inputItem"><label for="username">Name:</label>
+				<input type="text" id="username" placeholder="placeholder text"></div>
+				<div class="inputItem"><label for="email">Email:</label>
+				<input type="email" id="email" placeholder="placeholder text"><div class="arrow-left"></div><br></div>
+				<div class="inputItem"><label for="website">Website:</label>
+				<input type="text" id="website" placeholder="placeholder text"><div class="arrow-left"></div><br></div>
+				<div class="inputItem"><label for="message">Message:</label><br>
+				<textarea id="message"></textarea></div>
+				<button type="submit">Submit</button>
 			</div>
 		</form>
 	</body>

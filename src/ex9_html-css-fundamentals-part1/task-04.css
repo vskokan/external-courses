@@ -2,43 +2,46 @@ div {
 	width: 700px;
 	height: 400px;
 }
-#divSecondMethod {
-	background-color: rgb(94, 184, 141);
-	box-shadow: 13px 13px 0px 0px rgb(144, 205, 175), 23px 23px 0px 0px rgb(191, 227, 209); 
 
-}
-.top {
-	background-color: rgb(94, 184, 141); 
-	margin-bottom: 80px;	
-}
-.middle {
-	background-color: rgb(144, 205, 175); 
-}
-.low {
-	background-color: rgb(191, 227, 209); 	
-}
-#topDivFirstMethod {
+#top.threeDivsMethod{
 	position: relative;
 	z-index: 2;
+	background-color: rgb(94, 184, 141); 
+	margin-bottom: 80px;
 }
-#middleDivFirstMethod {
+
+#middle.threeDivsMethod {
 	left: 20px;
 	top: 20px;
 	position: absolute;
 	z-index: 1;
+	background-color: rgb(144, 205, 175); 
 }
-#lowDivFirstMethod {
+
+#low.threeDivsMethod {
 	left: 30px;
 	top: 30px;
 	position: absolute;
 	z-index: 0;
+	background-color: rgb(191, 227, 209);
 }
-#divThirdMethod {
+
+.boxShadowMethod {
+	background-color: rgb(94, 184, 141);
+	box-shadow: 13px 13px 0px 0px rgb(144, 205, 175), 23px 23px 0px 0px rgb(191, 227, 209); 
+	background-color: rgb(94, 184, 141); 
+	margin-bottom: 80px;
+
+}
+
+.pseudoElementsMethod {
 	background-color: rgb(144, 205, 175);
 	position: relative;
 	margin-left: 13px;
+	margin-bottom: 80px;
 }
-#divThirdMethod::before {
+
+.pseudoElementsMethod::before {
 	content:"";
 	width: 700px;
 	height: 400px;
@@ -48,7 +51,8 @@ div {
 	position: absolute;
 	z-index: 1;
 }
-#divThirdMethod::after {
+
+.pseudoElementsMethod::after {
 	content: "";
 	width: 700px;
 	height: 400px;
