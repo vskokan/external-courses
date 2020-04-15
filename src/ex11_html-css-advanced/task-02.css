@@ -29,9 +29,15 @@
 .input-field:focus + .placeholder, .input-field:valid + .placeholder {
 	color: royalblue;
 	font-size: 12px;
-	transform: translateY(-15px);
+	animation: movePlaceholder 0.2s ease-in forwards;
 }
 
 .input-field:not(:focus) + .placeholder {
 	color: gray;
+}
+
+@keyframes movePlaceholder {
+	to {
+		transform: translateY(-15px);
+	}
 }
