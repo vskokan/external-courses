@@ -12,7 +12,6 @@
 }
 
 @keyframes circle {
-
 	to {transform: translateY(400px); }
 }		 
 
