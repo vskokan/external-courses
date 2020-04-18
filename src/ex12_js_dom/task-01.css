@@ -11,7 +11,7 @@
 	width: 100%;
 	font-family: 'Baloo Tammudu 2', cursive;
 	font-size: 5.5em;
-	color: rgb(73, 73, 73);
+	color: rgb(0, 0, 0);
 	display: block;
 	background: linear-gradient(rgb(136, 99, 122), pink);
 	overflow: hidden;
@@ -27,7 +27,7 @@
 	align-items: center;
 	margin: 0px;
 	padding: 0px;
-	background-color: rgb(221, 215, 219);
+	background-color: rgb(250, 248, 249);
 }
 
 footer {
@@ -46,6 +46,7 @@ footer {
 	height: 600px;
 	width: 60%;
 	border-radius: 7px;
+	border: 1px solid rgb(73, 73, 73);
 }
 
 .slider__picarea {
@@ -67,7 +68,7 @@ footer {
 	box-shadow: 0px 0px 5px rgba(56, 55, 55, 0.5);
 }
 
-@keyframes movetoright {
+@keyframes moveToRight {
 	0% {
 		left: -100px;
 		opacity: 0%;
@@ -82,7 +83,7 @@ footer {
 	}
 }
 
-@keyframes movetoleft {
+@keyframes moveToLeft {
 	0% {
 		left:  100px;
 		opacity: 0%;
@@ -97,34 +98,42 @@ footer {
 	}
 }
 
+.slider__image_moveToLeft {
+	animation: moveToLeft 0.5s ease-in 0.05s forwards;
+}
+
+.slider__image_moveToRight {
+	animation: moveToRight 0.5s ease-in 0.05s forwards;	
+}
+
 .button {
 	border: none;
-	height: 40px;
-	width: 100px;
+	height: 100px;
+	width: 160px;
 	background: linear-gradient(45deg, lightgray, pink);
-	opacity: 60%;
 	transition: opacity 0.1s linear;
-	border: 1px solid white;
+	border: 2px solid white;
 	border-radius: 5px;
-	box-shadow: 0px 0px 2px rgba(98, 98, 98, 1);
-	
+	box-shadow: 0px 0px 4px rgb(51, 51, 51);
 	display: flex;
-	align-content: center;
+	flex-direction: column;
 	justify-content: center;
-
 }
 
 .button__label {
 	font-family: 'Baloo Tammudu 2', cursive;
-	font-size: 20px;
-	color: rgb(73, 73, 73);
+	font-size: 35px;
+	height: 70px;
+	color: rgb(0, 0, 0);
 	padding-bottom: 0px;
-}
+	padding-top: 0px;
 
+}
 .button:hover, .button:focus  {
 	opacity: 100%;
 	cursor: pointer;
-	border: 1px solid rgb(63, 63, 63);
+	border: 2px solid rgb(63, 63, 63);
+	box-shadow: 0px 0px 9px rgb(51, 51, 51);
 	outline: none;
 }
 

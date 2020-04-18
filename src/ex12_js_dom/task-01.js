@@ -1,63 +1,45 @@
-let sliderImages = document.querySelectorAll('.slider__image');
-let imagesSource = [];
+let imagesSource = ["asset/1.jpg", "asset/2.jpg", "asset/3.jpg", "asset/4.jpg"];
+let imageIndex = 0;
 
-for (i = 0; i < sliderImages.length; i++) {
-	imagesSource[i] = sliderImages[i].src;
-	sliderImages[i].remove();
+function nextImage() {
+	if (imageIndex === imagesSource.length - 1) {
+		imageIndex = 0;
+	} else {
+		imageIndex++;
+	}
+	insertNewImage();
+	let image = document.querySelector('.slider__image');
+	image.classList.add('slider__image_moveToRight')
 }
 
-let imageNumber = 0;
-
-function createImageToRight() {
-	if (imageNumber === imagesSource.length - 1) {
-		imageNumber = 0;
+function previousImage() {
+	if (imageIndex === 0) {
+		imageIndex = imagesSource.length - 1;
 	} else {
-		imageNumber++;
+		imageIndex--;
 	}
-	createImage();
-	rightAnim();
+	insertNewImage();
+	let image = document.querySelector('.slider__image');
+	image.classList.add('slider__image_moveToLeft')
 }
 
-function createImageToLeft() {
-
-	if (imageNumber === 0) {
-		imageNumber = imagesSource.length - 1;
-	} else {
-		imageNumber--;
-	}
+function insertNewImage() {
 	createImage();
-	leftAnim();
+	let image = document.querySelector('.slider__image');
+	let newImage = image.nextSibling;
+	newImage.style.opacity = '0%';
+	if (newImage.previousSibling !== 'null') {
+		newImage.previousSibling.remove();
+	}
 }
 
 function createImage() {
 	let image = document.createElement('img');
-	image.src = imagesSource[imageNumber];
+	image.src = imagesSource[imageIndex];
 	image.classList.add('slider__image');
-	document.querySelector('.slider__picarea').appendChild(image);
-	image.style.opacity = 0 +'%';
-	if (image.previousSibling !== 'null') {
-		image.previousSibling.remove();
-	}
+	document.querySelector('.slider__picarea').append(image);
 }
 
-function rightAnim() {
-	let image = document.querySelector('.slider__image');
-	image.style.animation = "movetoright 0.5s ease-in 0.05s forwards";
-}
-
-function leftAnim() {
-	let image = document.querySelector('.slider__image');
-	image.style.animation = "movetoleft 0.5s ease-in 0.05s forwards";
-}
-
-function createBase() {
-	let image = document.createElement('img');
-	image.src = imagesSource[imageNumber];
-	image.classList.add('slider__image');
-	document.querySelector('.slider__picarea').appendChild(image);
-}
-
-
-createBase();
-right.onclick = createImageToRight;
-left.onclick = createImageToLeft;
+window.onload = createImage();
+right.onclick = nextImage;
+left.onclick = previousImage;
