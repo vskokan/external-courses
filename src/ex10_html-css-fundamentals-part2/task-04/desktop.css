@@ -16,7 +16,7 @@
 }
 
 .logo {
-	background-image: url(logo.png);
+	background-image: url(images/logo.png);
 	width: 493px;
 	height: 93px;
 	display: flex;
@@ -104,9 +104,11 @@
 	border-left: 1px solid gray;
 	height: 25px;
 }
+
 .contacts__item:nth-child(1) {
 	border-left: 0px;
 }
+
 .contacts__item:hover {
      cursor: pointer;
      transition: 5s;
@@ -208,7 +210,7 @@
 .maininfo {
 	height: 885px;
 	background-color: white;
-	background-image: url(desktopbg.png);
+	background-image: url(images/desktopbg.png);
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
@@ -265,7 +267,6 @@
 	align-items: center;
 }
 
-
 .picture {
 	position: relative;
 	height: 241px;
@@ -300,6 +301,18 @@
 	padding: 5px;
 }
 
+#yellowpic .like__icon {
+	fill:#cc9800;
+}
+
+#greenpic .like__icon {
+	fill:white;
+}
+
+#yellowpic .like__icon:hover, #greenpic .like__icon:hover {
+	cursor:pointer;
+	fill: #1faae2;
+}
 
 .articles {
 	display: flex;
@@ -343,4 +356,13 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: bold; 
     padding-bottom: 20px;
+}
+
+.slider__icon, .contacts__icon, .search__icon {
+	fill: #77787a;
+}
+
+.slider__icon:hover, .contacts__icon:hover, .search__icon:hover {
+	cursor:pointer;
+	fill: #1faae2;
 }
