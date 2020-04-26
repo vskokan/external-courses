@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Kanban</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" href="kanban.css">
-	</head>
-	<body>
-		<header class="header">
-			<div class="app-logo">
-				<object type="image/svg+xml" data="applogo.svg" width="45" height="45" class="app-logo__icon" >
-				</object>
-				<div class="app-logo__title">Awesome Kanban Board</div>
-			</div>
+<head>
+	<title>Kanban</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="kanban.css">
+</head>
+<body>
+	<header class="header">
+		<div class="app-logo">
+			<object type="image/svg+xml" data="icons/applogo.svg" width="45" height="45" class="app-logo__icon">
+			</object>
+			<div class="app-logo__title">Awesome Kanban Board</div>
+		</div>
+		<div class="userpanel">
 			<div class="create-new-list">
-				<object type="image/svg+xml" data="addnew.svg" width="24" height="24" class="create-new-list__icon" >
+				<object type="image/svg+xml" data="icons/addnew.svg" width="24" height="24"
+					class="create-new-list__icon">
 				</object>
 				<div class="create-new-list__text">Create new list</div>
 			</div>
 			<div class="user-menu">
 				<div class="user-menu__panel">
 					<div class="user-menu__avatar">
-						<img src="useravatar.svg" width="40" height="40" alt = "avatar" class="user-menu__avatar-icon">
+						<img src="icons/useravatar.svg" width="40" height="40" alt="avatar"
+							class="user-menu__avatar-icon">
 					</div>
 					<div class="user-menu__arrow-icon">
-						<img src="arrowdown.svg" alt = "show/hide menu" width="24" height="24" class="user-menu__arrow-icon_rotate">
+						<img src="icons/arrowdown.svg" alt="show/hide menu" width="24" height="24"
+							class="user-menu__arrow-icon_rotate">
 					</div>
 				</div>
 			</div>
-		</header>
-		<main class="main">
-		</main>
-		<footer class="footer">
-			<div class="tasks-info">
-				<div class="tasks"><span class="tasks__label">Active tasks </span><span class="tasks__amount">&lt;N&gt;</span></div>
-				<div class="tasks"><span class="tasks__label">Finished tasks </span><span class="tasks__amount">&lt;M&gt;</span></div>
-			</div>
-			<div class="user-info">Kanban board by <span class="user-info__name">&lt;NAME&gt;</span>, <span class="user-info__year">&lt;YEAR&gt;</span></div>
-		</footer>
-		<script src="menu.js"></script>
-	</body>
+		</div>
+	</header>
+	<main class="main">
+	</main>
+	<footer class="footer">
+		<div class="tasks-info">
+			<div class="tasks"><span class="tasks__label">Active tasks </span><span
+					class="tasks__amount">&lt;N&gt;</span></div>
+			<div class="tasks"><span class="tasks__label">Finished tasks </span><span
+					class="tasks__amount">&lt;M&gt;</span></div>
+		</div>
+		<div class="user-info">Kanban board by <span class="user-info__name">&lt;NAME&gt;</span>, <span
+				class="user-info__year">&lt;YEAR&gt;</span></div>
+	</footer>
+	<script src="scripts/menu.js"></script>
+	<script src="scripts/tasks.js"></script>
+</body>
 </html>

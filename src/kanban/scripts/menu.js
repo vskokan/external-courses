@@ -43,7 +43,7 @@ function closeMenu() {
 function replaceArrow() {
     let arrow = document.querySelector('.user-menu__arrow-icon_rotate');
 
-    arrow.src = isOpened?'arrowup.svg':'arrowdown.svg';
+    arrow.src = isOpened?'icons/arrowup.svg':'icons/arrowdown.svg';
 }
 
 function menuMain() {
