@@ -178,7 +178,7 @@ function addDropdown() {
 function closeDropdown() {
     let taskBlock = document.getElementById(`${this.parentElement.id}`);
     let dropDown = taskBlock.querySelector('.taskBlock__dropdown');
-    
+
     taskBlock.removeChild(dropDown);
     taskBlock.style.height = decreaseHeight(taskBlock);
 }
@@ -188,7 +188,7 @@ function increaseHeight(block) {
     height = +(block.style.height.substr(0, block.style.height.length - 2));
     height += 50;
     height = height + 'px'; 
-    
+
     return height;
 }
 
@@ -197,14 +197,14 @@ function decreaseHeight(block) {
     height = +(block.style.height.substr(0, block.style.height.length - 2));
     height -= 50;
     height = height + 'px';  
-    
+
     return height;
 }
 
 createBlocks();
 changeButtonSetting();
 
-let buttons = document.getElementsByTagName('button');
+let buttons = main.getElementsByTagName('button');
 let addbutton = buttons[0];
 
 addbutton.onclick = addToBacklog;
