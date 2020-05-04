@@ -1,0 +1,42 @@
+#buttonLabel {
+	background: linear-gradient(to bottom, rgba(220,220,220, 1) 35%, rgba(184,184,184, 1) 65%);
+	box-shadow: 0 1px 4px rgba(0,0,0,0.8);
+	border-radius: 8px;
+	width: 200px;
+	position: relative;
+	top:6px;
+	left: 5px;
+	height: 44px;
+	text-align: center;
+}
+#buttonLabel::before, #buttonLabel::after {
+	content: "★";
+   	color: rgb(120,120,120);
+   	text-shadow: 1px 1px 1px rgba(255,255,255, 0.5);
+   	font-size: 30px;
+   	padding: 2px;
+}
+#buttonInnerBorder {
+	width: 210px;
+	height: 56px;
+	background: rgba(210,210,210, 1);
+	border-radius: 15px;
+	border: 1px solid white;
+}
+#button {
+	border-radius: 15px;
+	border: 2px solid rgb(120,120,120);
+	width: 212px;
+	height: 58px;
+	position: absolute;
+	box-shadow: 0 0 4px rgba(0,0,0,0.3);
+}
+span {
+	color: rgb(90,90,90);
+	text-shadow: 1px 1px 1px rgba(255,255,255, 0.5);
+	font-size: 20px;
+	position: relative;
+	top: -3px;
+	font: bold 20px Arial;
+	letter-spacing: -1px;
+}

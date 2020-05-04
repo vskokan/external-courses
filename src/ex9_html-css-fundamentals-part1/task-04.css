@@ -1,0 +1,64 @@
+div {
+	width: 700px;
+	height: 400px;
+}
+
+#top.threeDivsMethod{
+	position: relative;
+	z-index: 2;
+	background-color: rgb(94, 184, 141); 
+	margin-bottom: 80px;
+}
+
+#middle.threeDivsMethod {
+	left: 20px;
+	top: 20px;
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(144, 205, 175); 
+}
+
+#low.threeDivsMethod {
+	left: 30px;
+	top: 30px;
+	position: absolute;
+	z-index: 0;
+	background-color: rgb(191, 227, 209);
+}
+
+.boxShadowMethod {
+	background-color: rgb(94, 184, 141);
+	box-shadow: 13px 13px 0px 0px rgb(144, 205, 175), 23px 23px 0px 0px rgb(191, 227, 209); 
+	background-color: rgb(94, 184, 141); 
+	margin-bottom: 80px;
+
+}
+
+.pseudoElementsMethod {
+	background-color: rgb(144, 205, 175);
+	position: relative;
+	margin-left: 13px;
+	margin-bottom: 80px;
+}
+
+.pseudoElementsMethod::before {
+	content:"";
+	width: 700px;
+	height: 400px;
+	left: -13px;
+	top: -13px;
+	background-color: rgb(94, 184, 141);
+	position: absolute;
+	z-index: 1;
+}
+
+.pseudoElementsMethod::after {
+	content: "";
+	width: 700px;
+	height: 400px;
+	background-color: rgb(191, 227, 209);
+	left: 10px;
+	top: 10px;
+	position: absolute;
+	z-index: -1;
+}

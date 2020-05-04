@@ -1,0 +1,95 @@
+div.inform  {
+	width: 800px;
+	height: 500px;
+	background-color: white;
+}
+
+textarea {
+	resize: none;
+	position: relative;
+	width: 300px;
+	height: 200px;
+	border-radius: 5px;
+	border: 1px solid black;
+	left: 110px;
+	bottom: 20px;
+}
+h3 {
+	margin-top: -20px;
+	margin-left: 10px;
+	color: rgb(212,82,82);
+}
+
+hr {
+	color: black;
+	margin-top: -5px;
+	background-color: black; 
+    height: 1.5px; 
+}
+
+label {
+	font: bold 18px Arial; 
+	width: 100px;
+}
+
+.arrow-left {
+	width: 0; 
+	height: 0; 
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent; 
+	border-right:10px solid rgb(212,82,82); 
+	margin-top: 40px;
+	margin-right: 40px;
+}
+
+.arrow-left::after {
+	content: "Form field hint";
+	height: 25px;
+	width: 150px;
+	padding-left: 20px;
+	margin-left: 10px;
+	margin-top: -17px;
+	padding-top: 10px;
+	background-color: rgb(212,82,82);
+	position: absolute;
+	color: white;
+	font: bold 16px Arial;
+}
+
+input::placeholder {
+	color: gray;
+	font-size: 1.4em;
+}
+
+button {
+	border-radius: 9px;
+	height: 40px;
+	width: 130px;
+	border: 1px solid gray;
+	font: bold 14px Arial;
+	position: relative;
+	bottom: -160px;
+	left: 100px;
+}
+
+.arrow-left {
+	padding-left: 400px;
+	position: relative;
+	top: -50px;
+} 
+
+.inputItem {
+	margin:20px;
+	padding:0px;
+	height: 50px;
+}
+
+input {
+	border-radius: 5px;
+	border: 1px solid black;
+	width: 200px;
+	height: 20px;
+	padding: 10px;
+	position: absolute;
+	left: 140px;
+}
