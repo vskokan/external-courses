@@ -1,0 +1,19 @@
+.row:nth-child(even) {
+    background-color: #f2f6fa; 
+} 
+
+.row:nth-child(odd) {
+    background-color: #e8edf4;
+} 
+
+td:nth-child(4) {
+ 	text-align: left;	
+}
+
+td:nth-child(1) {
+ 	text-transform: capitalize;
+}
+
+td:hover, .row:hover {
+	background-color: #e2e5e9;
+}
