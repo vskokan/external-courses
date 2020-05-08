@@ -1,0 +1,26 @@
+.taskBlock__addbutton {
+	background-color: #EBECF0;
+	font-family: Roboto;
+	font-size: 16px;
+	color: #5E6C84;
+	border: none;
+	align-self: flex-start;	
+	padding-left: 15px;
+	padding-top: 5px;
+}
+
+.taskBlock__addbutton:hover {
+	cursor: pointer;
+	color: #0079BF;
+}
+
+.taskBlock__addbutton_disabled {
+	cursor: initial;
+	color: rgb(203, 206, 212);
+	background-color: #EBECF0;
+	font-size: 16px;
+	border: none;
+	align-self: flex-start;	
+	padding-left: 15px;
+	padding-top: 5px;
+}
