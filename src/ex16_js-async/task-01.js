@@ -1,25 +1,17 @@
 function myFetch(URL, method) {
-    let xhr = new XMLHttpRequest();
-
-    xhr.open(method, URL, true);
-    if (method === 'GET') {
-        xhr.send()
-    } else {
-        let formData = new FormData();
-        xhr.send(formData);
-    }
-    xhr.onload = function() {
-        if (xhr.status !== 200) {
-            console.log(`Error ${xhr.status}:${xhr.statusText}`);
+    return new Promise((resolve, reject) => {
+        let xhr = new XMLHttpRequest();
+        
+        xhr.open(method, URL, true);
+        if (method === 'GET') {
+            xhr.send()
         } else {
-            console.log('Success!');
+            let formData = new FormData();
+            xhr.send(formData);
         }
-    }
-    xhr.onerror = function() {
-        console.log(`Failed to load`);
-    }
-    
-    return undefined;
+        xhr.onload = () => resolve(console.log('Success!'));
+        xhr.onerror = () => reject(console.log(`Error ${xhr.status}:${xhr.statusText}`))
+    });
 }
 
 module.exports = myFetch;
